@@ -36,9 +36,9 @@ func NewPool(size int) (*Pool, error){
 	}
 
 	p := &Pool{
-		capacity:    int32(size),
-		freeSignal:  make(chan sig),
-		workers:     newWorkerQueue(size),
+		capacity:   int32(size),
+		freeSignal: make(chan sig),
+		workers:    newWorkerQueue(size),
 	}
 	p.workerCache.New = func() interface{} {
 		return &Worker{
@@ -77,7 +77,7 @@ func (p *Pool) Submit(task func()) error{
 
 // stop this worker.
 func (p *Pool) Stop() {
-		atomic.StoreInt32(&p.state,CLOSED)
+		atomic.StoreInt32(&p.state, CLOSED)
 		p.lock.Lock()
 		p.workers.clear()
 		p.lock.Unlock()

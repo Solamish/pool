@@ -7,8 +7,10 @@
       <change afterPath="$PROJECT_DIR$/.idea/pool.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pool/config.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/pool/pool.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/pool/worker.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pool/worker_queue.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
