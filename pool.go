@@ -153,7 +153,7 @@ func (p *Pool)putWorker(worker *Worker) bool{
 		return false
 	}
 	p.lock.Unlock()
-	// TODO Notice
+
 	p.freeSignal <- sig{}
 	return true
 }
